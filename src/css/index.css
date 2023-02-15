@@ -10,6 +10,15 @@ body {
 }
 
 /* Header Section ------------------------------------------------ */
+#header.light-scrolled {
+  border: 0;
+  box-shadow: 0 0 20px rgba(69, 69, 71, 0.3);
+}
+
+#header.night-scrolled {
+  border: 0;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
 .header .header-cover {
   opacity: 0;
   visibility: hidden;

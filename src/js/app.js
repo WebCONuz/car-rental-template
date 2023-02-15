@@ -22,6 +22,19 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   // -----------------------------------------------------------
+  // Window scroll ---------------------------------------------
+  // -----------------------------------------------------------
+  const header = document.querySelector("#header");
+  const nightModeBtn = document.querySelector(".night-mode");
+  window.addEventListener("scroll", function () {
+    if (!nightModeBtn.classList.contains("night")) {
+      header.classList.toggle("light-scrolled", window.scrollY > 0);
+    } else {
+      header.classList.toggle("night-scrolled", window.scrollY > 0);
+    }
+  });
+
+  // -----------------------------------------------------------
   // Intro slider ----------------------------------------------
   // -----------------------------------------------------------
   const swiper = new Swiper(".swiper", {
@@ -40,5 +53,34 @@ window.addEventListener("DOMContentLoaded", function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+  });
+
+  // -----------------------------------------------------------
+  // Night Mode ------------------------------------------------
+  // -----------------------------------------------------------
+  const nightIcon = document.querySelector(".night-mode > i");
+  const body = document.querySelector("body");
+  nightModeBtn.addEventListener("click", function () {
+    if (!this.classList.contains("night")) {
+      // night btn
+      this.classList.add("night");
+      this.classList.remove("bg-[#F5F5F5]");
+      this.classList.add("bg-[#272727]");
+      nightIcon.classList.add("bxs-sun", "text-white");
+      nightIcon.classList.remove("bxs-moon");
+      // night body
+      body.classList.add("bg-[#1C1C1C]", "text-white");
+      header.classList.add("bg-[#1C1C1C]");
+    } else {
+      // night btn
+      this.classList.remove("night");
+      this.classList.add("bg-[#F5F5F5]");
+      this.classList.remove("bg-[#272727]");
+      nightIcon.classList.remove("bxs-sun", "text-white");
+      nightIcon.classList.add("bxs-moon");
+      // night body
+      body.classList.remove("bg-[#1C1C1C]", "text-white");
+      header.classList.remove("bg-[#1C1C1C]");
+    }
   });
 });
