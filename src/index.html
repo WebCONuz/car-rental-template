@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- page title -->
+    <title>Car Rental</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/output.css" />
+    <!-- box-icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Header Section -->
+    <header
+      id="header"
+      class="header py-[18px] border-b border-[#0000003d] sticky top-0 left-0 z-50 bg-white"
+    >
+      <div
+        class="container main-container flex items-center relative justify-between lg:justify-start"
+      >
+        <!-- logo -->
+        <a href="#" class="header__logo">
+          <img
+            src="./images/header/logo.png"
+            alt="logo"
+            class="w-[140px] xl:w-[150px]"
+          />
+        </a>
+
+        <div
+          class="header-cover absolute -top-6 left-0 z-10 w-screen h-screen bg-[#000000bc] duration-300 lg:hidden"
+        ></div>
+
+        <button id="open-btn" class="lg:hidden">
+          <i class="bx bx-menu text-3xl"></i>
+        </button>
+
+        <div
+          class="wrapper flex fixed top-0 -right-full z-20 duration-300 bg-white flex-col h-screen p-8 lg:p-0 lg:items-center lg:justify-between lg:h-auto lg:flex-row lg:static lg:ml-5"
+        >
+          <!-- menu list -->
+          <ul class="header__menu lg:flex items-center">
+            <li
+              class="header__menu--item mb-8 lg:mb-0 flex items-center justify-between lg:hidden"
+            >
+              <img
+                src="./images/header/logo.png"
+                alt="logo-icon"
+                class="w-[150px]"
+              />
+              <button
+                id="close-btn"
+                class="close-btn bg-[#F5F5F5] w-[58px] h-[58px] rounded-full"
+              >
+                <i class="bx bx-x close-btn text-2xl"></i>
+              </button>
+            </li>
+            <li class="header__menu--item mb-6 lg:mb-0">
+              <a
+                href="#"
+                class="block lg:py-[10px] lg:px-4 text-2xl lg:inline-block lg:rounded-[50px] lg:hover:bg-[#F5F5F5] duration-200 lg:text-lg xl:py-3 xl:px-[18px]"
+                >Categories</a
+              >
+            </li>
+            <li class="header__menu--item relative mb-7 lg:mb-0">
+              <a
+                href="#"
+                class="block lg:py-[10px] lg:px-4 text-2xl lg:inline-block lg:rounded-[50px] lg:hover:bg-[#F5F5F5] duration-200 lg:text-lg xl:py-3 xl:px-[18px]"
+              >
+                About Us
+                <i class="bx bx-chevron-down ml-3 hidden lg:inline-block"></i>
+              </a>
+              <ul
+                class="about-submenu absolute lg:top-[60px] left-0 bg-white shadow-xl lg:p-2 rounded-xl duration-200 opacity-0"
+              >
+                <li class="submenu__item my-3 lg:my-0">
+                  <a
+                    href="#"
+                    class="duration-200 text-xl text-[#555555] block min-w-[130px] mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] lg:text-[#000] lg:text-lg rounded-xl lg:mb-1"
+                    >News</a
+                  >
+                </li>
+                <li class="submenu__item mb-3 lg:mb-0">
+                  <a
+                    href="#"
+                    class="duration-200 text-xl text-[#555555] block min-w-[130px] mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] lg:text-[#000] lg:text-lg rounded-xl lg:mb-1"
+                    >Careers</a
+                  >
+                </li>
+                <li class="submenu__item mb-3 lg:mb-0">
+                  <a
+                    href="#"
+                    class="duration-200 text-xl text-[#555555] block min-w-[130px] mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] lg:text-[#000] lg:text-lg rounded-xl lg:mb-1"
+                    >Locations</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu--item relative lg:mb-0">
+              <a
+                href="#"
+                class="block lg:py-[10px] lg:px-4 text-2xl lg:inline-block lg:rounded-[50px] lg:hover:bg-[#F5F5F5] duration-200 lg:text-lg xl:py-3 xl:px-[18px]"
+                >Help center
+                <i class="bx bx-chevron-down ml-3 hidden lg:inline-block"></i
+              ></a>
+              <ul
+                class="help-submenu absolute lg:top-[60px] left-0 bg-white shadow-xl lg:p-2 rounded-xl duration-200 opacity-0"
+              >
+                <li class="submenu__item my-3 lg:my-0">
+                  <a
+                    href="#"
+                    class="duration-200 text-xl text-[#555555] block min-w-[130px] mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] lg:text-[#000] lg:text-lg rounded-xl lg:mb-1"
+                    >FAQ</a
+                  >
+                </li>
+                <li class="submenu__item mb-3 lg:mb-0">
+                  <a
+                    href="#"
+                    class="duration-200 text-xl text-[#555555] block min-w-[130px] mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] lg:text-[#000] lg:text-lg rounded-xl lg:mb-1"
+                    >Contact Us</a
+                  >
+                </li>
+                <li class="submenu__item mb-3 lg:mb-0">
+                  <a
+                    href="#"
+                    class="duration-200 text-xl text-[#555555] block min-w-[130px] mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] lg:text-[#000] lg:text-lg rounded-xl lg:mb-1"
+                    >Term and Conditions</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- features -->
+          <ul class="header__features flex items-center mt-auto lg:mt-0">
+            <li
+              class="header__features--item text-lg font-semibold cursor-default mr-6 lg:hidden xl:block"
+            >
+              +998 99 542 63 07
+            </li>
+            <li
+              class="header__features--item flex items-center justify-center bg-[#F5F5F5] rounded-full hover:bg-[#d8d8d8] duration-200 w-[50px] h-[50px] xl:w-[58px] xl:h-[58px]"
+            >
+              <i class="bx bxs-moon text-xl text-[#555555]"></i>
+            </li>
+            <li class="header__features--item ml-4">
+              <button
+                class="flex items-center justify-center rounded-[100px] bg-[#299764] hover:bg-[#077743] duration-200 py-[14px] px-[25px] xl:py-[18px] xl:px-[30px]"
+              >
+                <span class="text-white text-lg mr-2">Login</span>
+                <img src="./images/header/login-icoon.svg" alt="login-icon" />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- script files -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>

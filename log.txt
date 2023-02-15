@@ -1,0 +1,9 @@
+bg: #ffffff
+card-bg: #F5F5F5
+
+bg-night: #1C1C1C
+card-night: #272727
+
+green: #299764
+
+dark: #000000
