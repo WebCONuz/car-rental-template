@@ -595,6 +595,10 @@ video {
   left: 50%;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -605,6 +609,10 @@ video {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .my-3 {
@@ -715,6 +723,10 @@ video {
 
 .w-\[88\%\] {
   width: 88%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .min-w-\[130px\] {

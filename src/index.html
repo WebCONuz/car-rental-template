@@ -9,6 +9,11 @@
     <title>Car Rental</title>
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/output.css" />
@@ -174,7 +179,97 @@
       </div>
     </header>
 
+    <!-- Intro Section -->
+    <section id="intro" class="py-5">
+      <div class="container main-container relative">
+        <div class="swiper">
+          <ul class="swiper-wrapper">
+            <li class="intro__slider--item swiper-slide w-full relative">
+              <img
+                src="./images/intro/intro1.jpg"
+                alt="intro-img"
+                class="rounded-xl"
+              />
+              <div
+                class="intro__slider--item-title max-w-[416px] absolute top-14 left-1/2 -translate-x-1/2"
+              >
+                <h1 class="font-semibold text-4xl text-center text-white mb-3">
+                  Compact cars
+                </h1>
+                <p class="font-normal text-center text-white opacity-90">
+                  Rent cars as you are comfortable and where you are
+                  comfortable.
+                </p>
+              </div>
+            </li>
+            <li class="intro__slider--item swiper-slide w-full relative">
+              <img
+                src="./images/intro/intro2.jpg"
+                alt="intro-img"
+                class="rounded-xl"
+              />
+              <div
+                class="intro__slider--item-title max-w-[416px] absolute top-14 left-1/2 -translate-x-1/2"
+              >
+                <h1 class="font-semibold text-4xl text-center text-white mb-3">
+                  Sports cars
+                </h1>
+                <p class="font-normal text-center text-white opacity-90">
+                  Rent cars as you are comfortable and where you are
+                  comfortable.
+                </p>
+              </div>
+            </li>
+            <li class="intro__slider--item swiper-slide w-full relative">
+              <img
+                src="./images/intro/intro3.jpg"
+                alt="intro-img"
+                class="rounded-xl"
+              />
+              <div
+                class="intro__slider--item-title max-w-[416px] absolute top-14 left-1/2 -translate-x-1/2"
+              >
+                <h1 class="font-semibold text-4xl text-center text-white mb-3">
+                  Vans
+                </h1>
+                <p class="font-normal text-center text-white opacity-90">
+                  Rent cars as you are comfortable and where you are
+                  comfortable.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- Search section -->
+        <div
+          class="intro-search max-w-[600px] mx-auto shadow-lg rounded-[50px] border p-2 overflow-hidden -translate-y-1/2 bg-white relative z-10"
+        >
+          <form action="#" class="flex justify-between w-full">
+            <input
+              type="text"
+              placeholder="Find the car of your dreams"
+              class="border-0 focus:outline-none text-lg py-3 px-7 flex-grow"
+            />
+            <button
+              type="submit"
+              class="w-[58px] h-[58px] bg-[#299764] text-white flex items-center justify-center rounded-full"
+            >
+              <i class="bx bx-search text-2xl"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!-- script files -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
