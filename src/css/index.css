@@ -75,7 +75,6 @@ body {
 #intro .swiper .swiper-button-prev::after {
   display: none;
 }
-
 #intro .swiper .swiper-button-next {
   width: 36px !important;
   height: 36px !important;
@@ -154,7 +153,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 #description .swiper .swiper-button-prev {
   width: 36px !important;
   height: 36px !important;
@@ -173,7 +171,6 @@ body {
 #description .swiper .swiper-button-prev::after {
   display: none;
 }
-
 #description .swiper .swiper-button-next {
   width: 36px !important;
   height: 36px !important;
@@ -193,7 +190,6 @@ body {
 #description .swiper .swiper-button-next::after {
   display: none;
 }
-
 #description .swiper .swiper-scrollbar {
   width: 75%;
   background-color: rgba(255, 255, 255, 0.4);
@@ -202,4 +198,15 @@ body {
 }
 #description .swiper .swiper-scrollbar .swiper-scrollbar-drag {
   background-color: #fff;
+}
+
+/* Company Section ------------------------------------------ */
+
+#company .swiper.company-swiper {
+  width: 100%;
+  border: 1px solid red;
+}
+#company .swiper.company-swiper .swiper-slide {
+  width: 140px !important;
+  margin-right: 66px;
 }
