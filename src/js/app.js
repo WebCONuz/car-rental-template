@@ -72,31 +72,85 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   // -----------------------------------------------------------
-  // Night Mode ------------------------------------------------
+  // Dark Mode ------------------------------------------------
   // -----------------------------------------------------------
-  const nightIcon = document.querySelector(".night-mode > i");
   const body = document.querySelector("body");
+  const nightIcon = document.querySelector(".night-mode > i");
+  const bgGray = document.querySelectorAll(".color-gray");
+  const hoverBgGray = document.querySelectorAll(".hover-color-gray");
+  const bgWhite = document.querySelectorAll(".bgWhite");
+  const bgDark = document.querySelectorAll(".bgDark");
+  const grayText = document.querySelectorAll(".grayText");
+  const textDark = document.querySelectorAll(".textDark");
+  const hoverTextDark = document.querySelectorAll(".hoverTextDark");
+  const lgTextDark = document.querySelectorAll(".lgTextDark");
+  const textWhite = document.querySelectorAll(".textWhite");
+  const shadow = document.querySelectorAll(".elm-shadow");
+  const btnBorder = document.querySelectorAll(".btnBorder");
+  const borderElm = document.querySelectorAll(".border-elm");
+  const lightImages = document.querySelectorAll(".light-img");
+  const darkImages = document.querySelectorAll(".dark-img");
+
+  function changeBg(element, class1, class2) {
+    element.forEach((item) => {
+      item.classList.remove(class1);
+      item.classList.add(class2);
+    });
+  }
+
+  // console.log(hoverBgGray[0].classList);
+
   nightModeBtn.addEventListener("click", function () {
     if (!this.classList.contains("night")) {
-      // night btn
+      // Dark Mode
       this.classList.add("night");
-      this.classList.remove("bg-[#F5F5F5]");
-      this.classList.add("bg-[#272727]");
-      nightIcon.classList.add("bxs-sun", "text-white");
+      this.classList.add("hover:bg-[#404040]");
+      this.classList.remove("hover:bg-[#d8d8d8]");
+      nightIcon.classList.add("bxs-sun");
       nightIcon.classList.remove("bxs-moon");
-      // night body
       body.classList.add("bg-[#1C1C1C]", "text-white");
-      header.classList.add("bg-[#1C1C1C]");
+
+      changeBg(bgGray, "bg-[#F5F5F5]", "bg-[#272727]");
+      changeBg(bgWhite, "bg-white", "bg-[#1C1C1C]");
+      changeBg(bgDark, "bg-[#000]", "bg-white");
+      changeBg(grayText, "text-[#555555]", "text-[#BABABA]");
+      changeBg(textDark, "text-[#000]", "text-white");
+      changeBg(hoverTextDark, "hover:text-[#000]", "hover:text-white");
+      changeBg(hoverTextDark, "hover:border-[#000]", "hover:border-white");
+      changeBg(lgTextDark, "lg:text-[#000]", "lg:text-white");
+      changeBg(hoverBgGray, "lg:hover:bg-[#F5F5F5]", "lg:hover:bg-[#272727]");
+      changeBg(textWhite, "text-white", "text-[#000]");
+      changeBg(shadow, "elm-shadow", "dark-shadow");
+      changeBg(btnBorder, "border-[#E5E7EA]", "border-[#333333]");
+      changeBg(btnBorder, "hover:bg-[#E5E7EA]", "hover:bg-[#333333]");
+      changeBg(borderElm, "border-gray-300", "border-[#333333]");
+      changeBg(lightImages, "inline-block", "hidden");
+      changeBg(darkImages, "hidden", "inline-block");
     } else {
-      // night btn
+      // Light Mode
       this.classList.remove("night");
-      this.classList.add("bg-[#F5F5F5]");
-      this.classList.remove("bg-[#272727]");
-      nightIcon.classList.remove("bxs-sun", "text-white");
+      this.classList.remove("hover:bg-[#404040]");
+      this.classList.add("hover:bg-[#d8d8d8]");
+      nightIcon.classList.remove("bxs-sun");
       nightIcon.classList.add("bxs-moon");
-      // night body
       body.classList.remove("bg-[#1C1C1C]", "text-white");
-      header.classList.remove("bg-[#1C1C1C]");
+
+      changeBg(bgGray, "bg-[#272727]", "bg-[#F5F5F5]");
+      changeBg(bgWhite, "bg-[#1C1C1C]", "bg-white");
+      changeBg(bgDark, "bg-white", "bg-[#000]");
+      changeBg(grayText, "text-[#BABABA]", "text-[#555555]");
+      changeBg(textDark, "text-white", "text-[#000]");
+      changeBg(hoverTextDark, "hover:text-white", "hover:text-[#000]");
+      changeBg(hoverTextDark, "hover:border-white", "hover:border-[#000]");
+      changeBg(lgTextDark, "lg:text-white", "lg:text-[#000]");
+      changeBg(hoverBgGray, "lg:hover:bg-[#272727]", "lg:hover:bg-[#F5F5F5]");
+      changeBg(textWhite, "text-[#000]", "text-white");
+      changeBg(shadow, "dark-shadow", "elm-shadow");
+      changeBg(btnBorder, "border-[#333333]", "border-[#E5E7EA]");
+      changeBg(btnBorder, "hover:bg-[#333333]", "hover:bg-[#E5E7EA]");
+      changeBg(borderElm, "border-[#333333]", "border-gray-300");
+      changeBg(lightImages, "hidden", "inline-block");
+      changeBg(darkImages, "inline-block", "hidden");
     }
   });
 });

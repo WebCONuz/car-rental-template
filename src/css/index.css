@@ -9,6 +9,13 @@ body {
   margin: 0 auto !important;
 }
 
+.elm-shadow {
+  box-shadow: 0 5px 15px rgba(69, 69, 71, 0.2);
+}
+.dark-shadow {
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
 /* Header Section ------------------------------------------------ */
 #header.light-scrolled {
   border: 0;
@@ -31,7 +38,6 @@ body {
   width: calc(100% - 171px) !important;
 }
 .header__menu--item ul {
-  box-shadow: 0 0 15px rgba(69, 69, 71, 0.1);
   visibility: hidden;
 }
 .header__menu--item:hover > ul {
@@ -209,4 +215,19 @@ body {
 #company .swiper.company-swiper .swiper-slide {
   width: 140px !important;
   margin-right: 66px;
+}
+
+/* Service Section ------------------------------------------ */
+#service .card img.hovered {
+  display: none;
+}
+#service .card:hover h3,
+#service .card:hover p {
+  color: #fff;
+}
+#service .card:hover img.hovered {
+  display: inline-block;
+}
+#service .card:hover img.unhovered {
+  display: none;
 }
