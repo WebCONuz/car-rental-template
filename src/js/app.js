@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", function () {
   // -----------------------------------------------------------
   // Intro slider ----------------------------------------------
   // -----------------------------------------------------------
-  const swiper = new Swiper(".swiper", {
+  const swiper1 = new Swiper(".intro-swiper", {
     loop: true,
     spaceBetween: 30,
     centeredSlides: true,
@@ -52,6 +52,22 @@ window.addEventListener("DOMContentLoaded", function () {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+  });
+
+  // -----------------------------------------------------------
+  // Description slider ----------------------------------------
+  // -----------------------------------------------------------
+  const swiper2 = new Swiper(".description__carousel", {
+    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
     },
   });
 

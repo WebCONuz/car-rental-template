@@ -59,7 +59,7 @@
         </button>
 
         <div
-          class="wrapper flex fixed top-0 -right-full z-20 duration-300 flex-col h-screen p-8 lg:p-0 lg:items-center lg:justify-between lg:h-auto lg:flex-row lg:static lg:ml-5"
+          class="wrapper flex bg-white fixed top-0 -right-full z-20 duration-300 flex-col h-screen p-8 lg:p-0 lg:items-center lg:justify-between lg:h-auto lg:flex-row lg:static lg:ml-5"
         >
           <!-- menu list -->
           <ul class="header__menu lg:flex items-center">
@@ -182,7 +182,7 @@
     <!-- Intro Section -->
     <section id="intro" class="py-5">
       <div class="container main-container relative">
-        <div class="swiper">
+        <div class="intro-swiper swiper">
           <ul class="swiper-wrapper">
             <li class="intro__slider--item swiper-slide w-full relative">
               <img
@@ -485,6 +485,172 @@
           >
             View all cars
           </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Desctiption Section -->
+    <section id="description" class="desvription py-24 bg-[#F5F5F5]">
+      <div class="container main-container flex">
+        <div class="bg-white p-[75px] py-[60px] max-w-[470px] rounded-l-xl">
+          <p class="mb-4 flex">
+            <img
+              src="./images/descr/google-icon.svg"
+              alt="google-icon"
+              class="w-[15px]"
+            />
+            <a href="#" class="text-[#4285F4] ml-2">From Google</a>
+          </p>
+          <h1 class="text-[38px] mb-[30px]">
+            Hear what the community is saying
+          </h1>
+          <div class="line mb-[30px] h-[2px]"></div>
+          <p class="text-sm text-[#555555] mb-4">
+            More interesting reviews on Instagram
+          </p>
+          <div class="instagram-btn rounded-[100px] inline-block p-[2px]">
+            <div class="w-full h-full bg-white rounded-[100px]">
+              <a
+                href="#"
+                class="py-[18px] px-[50px] bg-white rounded-[100px] inline-block text-lg"
+                >Instagram</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="descr-right bg-[#299764] py-[50px] pl-[40px] rounded-r-xl overflow-hidden"
+        >
+          <div class="description__carousel swiper mySwiper">
+            <ul class="carousel__list swiper-wrapper h-auto">
+              <li
+                class="carousel__list--item swiper-slide p-6 rounded-xl bg-white w-[420px]"
+              >
+                <div class="item-head flex items-center mb-[14px]">
+                  <img src="./images//descr/person1.svg" alt="person-img" />
+                  <div class="title ml-3">
+                    <h4 class="font-semibold">Savannah Nguyen</h4>
+                    <p class="text-sm font-normal font-[#555555]">
+                      savannahnguyen@gmail.com
+                    </p>
+                  </div>
+                  <img
+                    src="./images/descr/google-icon.svg"
+                    alt="google-icon"
+                    class="ml-auto"
+                  />
+                </div>
+                <p
+                  class="text-sm font-normal h-[120px] overflow-hidden w-full mb-[25px]"
+                >
+                  Sagittis sed tortor, elementum vitae varius sodales
+                  consectetur. Vitae arcu ut morbi bibendum ullamcorper feugiat.
+                  Venenatis hendrerit cursus egestas sit ornare nunc vulputate
+                  aliquam sapien. Pulvinar nunc consectetur nibh consectetur
+                  mollis mauris est mauris amet. Sed hac vehicula id et dui
+                  morbi quam pulvinar condimentum. Senectus sed varius interdum
+                  nunc, arcu vulputate massa.
+                </p>
+                <div class="border border-gray-300 mb-6"></div>
+                <div class="flex items-center">
+                  <span class="text-sm mr-4">Star rating:</span>
+                  <div class="stars">
+                    <i class="bx bxs-star text-[#299764] text-xl"></i>
+                    <i class="bx bxs-star text-[#299764] text-xl"></i>
+                    <i class="bx bxs-star text-[#299764] text-xl"></i>
+                    <i class="bx bxs-star text-[#299764] text-xl"></i>
+                    <i class="bx bxs-star-half text-[#299764] text-xl"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="carousel__list--item swiper-slide p-6 rounded-xl bg-white w-[420px]"
+              >
+                <div class="item-head flex items-center mb-[14px]">
+                  <img src="./images//descr/person1.svg" alt="person-img" />
+                  <div class="title ml-3">
+                    <h4 class="font-semibold">Savannah Nguyen</h4>
+                    <p class="text-sm font-normal font-[#555555]">
+                      savannahnguyen@gmail.com
+                    </p>
+                  </div>
+                  <img
+                    src="./images/descr/google-icon.svg"
+                    alt="google-icon"
+                    class="ml-auto"
+                  />
+                </div>
+                <p
+                  class="text-sm font-normal h-[120px] overflow-hidden w-full mb-[25px]"
+                >
+                  Sagittis sed tortor, elementum vitae varius sodales
+                  consectetur. Vitae arcu ut morbi bibendum ullamcorper feugiat.
+                  Venenatis hendrerit cursus egestas sit ornare nunc vulputate
+                  aliquam sapien. Pulvinar nunc consectetur nibh consectetur
+                  mollis mauris est mauris amet. Sed hac vehicula id et dui
+                  morbi quam pulvinar condimentum. Senectus sed varius interdum
+                  nunc, arcu vulputate massa.
+                </p>
+                <div class="border border-gray-300 mb-6"></div>
+                <div class="flex items-center">
+                  <span class="text-sm mr-4">Star rating:</span>
+                  <div class="stars">
+                    <i class="bx bxs-star text-[#299764] text-xl"></i>
+                    <i class="bx bxs-star text-[#299764] text-xl"></i>
+                    <i class="bx bxs-star text-[#299764] text-xl"></i>
+                    <i class="bx bxs-star text-[#299764] text-xl"></i>
+                    <i class="bx bxs-star-half text-[#299764] text-xl"></i>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="carousel__list--item swiper-slide p-6 rounded-xl bg-white w-[420px]"
+              >
+                <div class="item-head flex items-center mb-[14px]">
+                  <img src="./images//descr/person1.svg" alt="person-img" />
+                  <div class="title ml-3">
+                    <h4 class="font-semibold">Savannah Nguyen</h4>
+                    <p class="text-sm font-normal font-[#555555]">
+                      savannahnguyen@gmail.com
+                    </p>
+                  </div>
+                  <img
+                    src="./images/descr/google-icon.svg"
+                    alt="google-icon"
+                    class="ml-auto"
+                  />
+                </div>
+                <p
+                  class="text-sm font-normal h-[120px] overflow-hidden w-full mb-[25px]"
+                >
+                  Sagittis sed tortor, elementum vitae varius sodales
+                  consectetur. Vitae arcu ut morbi bibendum ullamcorper feugiat.
+                  Venenatis hendrerit cursus egestas sit ornare nunc vulputate
+                  aliquam sapien. Pulvinar nunc consectetur nibh consectetur
+                  mollis mauris est mauris amet. Sed hac vehicula id et dui
+                  morbi quam pulvinar condimentum. Senectus sed varius interdum
+                  nunc, arcu vulputate massa.
+                </p>
+                <div class="border border-gray-300 mb-6"></div>
+                <div class="flex items-center">
+                  <span class="text-sm mr-4">Star rating:</span>
+                  <div class="stars">
+                    <i class="bx bxs-star text-[#299764] text-xl"></i>
+                    <i class="bx bxs-star text-[#299764] text-xl"></i>
+                    <i class="bx bxs-star text-[#299764] text-xl"></i>
+                    <i class="bx bxs-star text-[#299764] text-xl"></i>
+                    <i class="bx bxs-star-half text-[#299764] text-xl"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar mt-auto mb-[10px]"></div>
+          </div>
         </div>
       </div>
     </section>
