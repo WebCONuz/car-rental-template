@@ -153,4 +153,90 @@ window.addEventListener("DOMContentLoaded", function () {
       changeBg(darkImages, "inline-block", "hidden");
     }
   });
+
+  // -----------------------------------------------------------
+  // Products --------------------------------------------------
+  // -----------------------------------------------------------
+  const compactBtn = this.document.querySelector(".conpactBtn");
+  const sportBtn = this.document.querySelector(".sportBtn");
+  const vansBtn = this.document.querySelector(".vansBtn");
+
+  const allBtn = this.document.querySelectorAll(".all-btn");
+  const allCars = this.document.querySelectorAll(".all-cars");
+  const compactCars = this.document.querySelectorAll(".compact");
+  const sportCars = this.document.querySelectorAll(".sport");
+  const vansCars = this.document.querySelectorAll(".vans");
+
+  changeBg(allCars, "block", "hidden");
+  changeBg(compactCars, "hidden", "block");
+
+  compactBtn.addEventListener("click", function () {
+    allBtn.forEach((item) => {
+      item.classList.remove(
+        "bg-[#299764]",
+        "border-[#299764]",
+        "hover:bg-[#077743]",
+        "hover:border-[#077743]",
+        "text-white"
+      );
+      item.classList.add("bg-white", "border-[#E5E7EA]", "hover:bg-[#E5E7EA]");
+    });
+    this.classList.remove("bg-white", "border-[#E5E7EA]", "hover:bg-[#E5E7EA]");
+    this.classList.add(
+      "bg-[#299764]",
+      "border-[#299764]",
+      "hover:bg-[#077743]",
+      "hover:border-[#077743]",
+      "text-white"
+    );
+
+    changeBg(allCars, "block", "hidden");
+    changeBg(compactCars, "hidden", "block");
+  });
+  sportBtn.addEventListener("click", function () {
+    allBtn.forEach((item) => {
+      item.classList.remove(
+        "bg-[#299764]",
+        "border-[#299764]",
+        "hover:bg-[#077743]",
+        "hover:border-[#077743]",
+        "text-white"
+      );
+      item.classList.add("bg-white", "border-[#E5E7EA]", "hover:bg-[#E5E7EA]");
+    });
+    this.classList.remove("bg-white", "border-[#E5E7EA]", "hover:bg-[#E5E7EA]");
+    this.classList.add(
+      "bg-[#299764]",
+      "border-[#299764]",
+      "hover:bg-[#077743]",
+      "hover:border-[#077743]",
+      "text-white"
+    );
+
+    changeBg(allCars, "block", "hidden");
+    changeBg(sportCars, "hidden", "block");
+  });
+  vansBtn.addEventListener("click", function () {
+    allBtn.forEach((item) => {
+      item.classList.remove(
+        "bg-[#299764]",
+        "border-[#299764]",
+        "hover:bg-[#077743]",
+        "hover:border-[#077743]",
+        "text-white"
+      );
+      item.classList.add("bg-white", "border-[#E5E7EA]", "hover:bg-[#E5E7EA]");
+    });
+    this.classList.remove("bg-white", "border-[#E5E7EA]", "hover:bg-[#E5E7EA]");
+    this.classList.add(
+      "bg-[#299764]",
+      "border-[#299764]",
+      "hover:bg-[#077743]",
+      "hover:border-[#077743]",
+      "text-white"
+    );
+
+    changeBg(allCars, "block", "hidden");
+    changeBg(vansCars, "hidden", "block");
+  });
 });

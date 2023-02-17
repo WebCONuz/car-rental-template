@@ -153,7 +153,7 @@
               </ul>
             </li>
             <li
-              class="header__menu--item text-2xl cursor-default mr-6 lg:hidden xl:block"
+              class="header__menu--item text-2xl sm:hidden cursor-default mr-6"
             >
               +998 99 542 63 07
             </li>
@@ -268,22 +268,24 @@
         </div>
 
         <!-- Search section -->
-        <div
-          class="intro-search max-w-[330px] sm:max-w-[600px] mx-auto elm-shadow rounded-[50px] p-1 sm:p-2 overflow-hidden -translate-y-1/2 bg-white bgWhite duration-200 relative z-10"
-        >
-          <form action="#" class="flex justify-between w-full">
-            <input
-              type="text"
-              placeholder="Find the car of your dreams"
-              class="border-none focus:border-none focus:outline-none focus:ring-0 text-lg py-1 px-5 sm:py-3 sm:px-7 flex-grow bg-white bgWhite duration-200"
-            />
-            <button
-              type="submit"
-              class="w-[52px] sm:w-[58px] h-[52px] sm:h-[58px] bg-[#299764] text-white flex items-center justify-center rounded-full"
-            >
-              <i class="bx bx-search text-xl sm:text-2xl"></i>
-            </button>
-          </form>
+        <div class="px-[10px] sm:px-0">
+          <div
+            class="intro-search max-w-[330px] sm:max-w-[600px] mx-auto elm-shadow rounded-[50px] p-1 sm:p-2 overflow-hidden -translate-y-1/2 bg-white bgWhite duration-200 relative z-10"
+          >
+            <form action="#" class="flex justify-between w-full relative">
+              <input
+                type="text"
+                placeholder="Find the car of your dreams"
+                class="border-none focus:border-none focus:outline-none focus:ring-0 text-lg py-1 px-5 sm:py-3 sm:px-7 flex-grow bg-white bgWhite duration-200"
+              />
+              <button
+                type="submit"
+                class="absolute -top-[2.5px] -right-[2px] w-[41px] sm:w-[58px] h-[41px] sm:h-[58px] bg-[#299764] text-white flex items-center justify-center rounded-full"
+              >
+                <i class="bx bx-search text-xl sm:text-2xl"></i>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -305,29 +307,30 @@
         <ul class="product__nav flex justify-center items-center mb-6">
           <li>
             <button
-              class="bg-[#299764] border-[#299764] hover:bg-[#077743] text-sm sm:text-base hover:border-[#077743] text-white mx-[7px] sm:mx-4 border-2 rounded-[100px] duration-200 py-[10px] sm:py-5 px-4 sm:px-10"
+              class="bg-[#299764] conpactBtn all-btn border-[#299764] hover:bg-[#077743] text-sm sm:text-base hover:border-[#077743] text-white mx-[7px] sm:mx-4 border-2 rounded-[100px] duration-200 py-[10px] sm:py-5 px-4 sm:px-10"
             >
               Compact
             </button>
           </li>
           <li>
             <button
-              class="bg-white bgWhite border-[#E5E7EA] btnBorder hover:bg-[#E5E7EA] text-sm sm:text-base mx-[7px] sm:mx-4 border-2 rounded-[100px] duration-200 py-[10px] sm:py-5 px-4 sm:px-10"
+              class="bg-white bgWhite sportBtn all-btn border-[#E5E7EA] btnBorder hover:bg-[#E5E7EA] text-sm sm:text-base mx-[7px] sm:mx-4 border-2 rounded-[100px] duration-200 py-[10px] sm:py-5 px-4 sm:px-10"
             >
               Sports <span class="hidden sm:inline">cars</span>
             </button>
           </li>
           <li>
             <button
-              class="bg-white bgWhite border-[#E5E7EA] btnBorder hover:bg-[#E5E7EA] text-sm sm:text-base mx-[7px] sm:mx-4 border-2 rounded-[100px] duration-200 py-[10px] sm:py-5 px-4 sm:px-10"
+              class="bg-white bgWhite vansBtn all-btn border-[#E5E7EA] btnBorder hover:bg-[#E5E7EA] text-sm sm:text-base mx-[7px] sm:mx-4 border-2 rounded-[100px] duration-200 py-[10px] sm:py-5 px-4 sm:px-10"
             >
               Vans
             </button>
           </li>
         </ul>
         <ul class="flex flex-wrap justify-between">
+          <!-- Compact Cars -->
           <li
-            class="card px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+            class="card compact all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
           >
             <h3 class="text-2xl font-semibold mb-2">Ford Fiesta</h3>
             <p class="text-[#555555] grayText duration-200 mb-4">Economy Car</p>
@@ -392,7 +395,7 @@
             </div>
           </li>
           <li
-            class="card px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+            class="card compact all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
           >
             <h3 class="text-2xl font-semibold mb-2">Nissan Versa</h3>
             <p class="text-[#555555] grayText duration-200 mb-4">Compact Car</p>
@@ -457,7 +460,7 @@
             </div>
           </li>
           <li
-            class="card px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+            class="card compact all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
           >
             <h3 class="text-2xl font-semibold mb-2">Toyota Corolla</h3>
             <p class="text-[#555555] grayText duration-200 mb-4">
@@ -524,7 +527,7 @@
             </div>
           </li>
           <li
-            class="card px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+            class="card compact all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
           >
             <h3 class="text-2xl font-semibold mb-2">Nissan Rogue</h3>
             <p class="text-[#555555] grayText duration-200 mb-4">
@@ -591,7 +594,7 @@
             </div>
           </li>
           <li
-            class="card px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+            class="card compact all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
           >
             <h3 class="text-2xl font-semibold mb-2">Chevy Traverse</h3>
             <p class="text-[#555555] grayText duration-200 mb-4">
@@ -658,7 +661,7 @@
             </div>
           </li>
           <li
-            class="card px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+            class="card compact all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
           >
             <h3 class="text-2xl font-semibold mb-2">Nissan Altima</h3>
             <p class="text-[#555555] grayText duration-200 mb-4">
@@ -666,6 +669,686 @@
             </p>
             <img
               src="./images/products/car6.png"
+              alt="car-img"
+              class="w-full scale-110 mb-4"
+            />
+            <div class="card-footer flex flex-wrap">
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/user-icon.svg"
+                  alt="user-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/user-icon-dark.svg"
+                  alt="user-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">5 Seats</span>
+              </div>
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/auto-icon.svg"
+                  alt="auto-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/auto-icon-dark.svg"
+                  alt="auto-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">Automatic</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/year-icon.svg"
+                  alt="year-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/year-icon-dark.svg"
+                  alt="year-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">21+ Years</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/lit-icon.svg"
+                  alt="lit-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/lit-icon-dark.svg"
+                  alt="lit-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">1-lit / 2.5 km</span>
+              </div>
+            </div>
+          </li>
+
+          <!-- Sport Cars -->
+          <li
+            class="card sport all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+          >
+            <h3 class="text-2xl font-semibold mb-2">Royce rolls ghost</h3>
+            <p class="text-[#555555] grayText duration-200 mb-4">
+              Full-size Car
+            </p>
+            <img
+              src="./images/products/sport1.png"
+              alt="car-img"
+              class="w-full scale-110 mb-4"
+            />
+            <div class="card-footer flex flex-wrap">
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/user-icon.svg"
+                  alt="user-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/user-icon-dark.svg"
+                  alt="user-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">5 Seats</span>
+              </div>
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/auto-icon.svg"
+                  alt="auto-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/auto-icon-dark.svg"
+                  alt="auto-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">Automatic</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/year-icon.svg"
+                  alt="year-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/year-icon-dark.svg"
+                  alt="year-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">21+ Years</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/lit-icon.svg"
+                  alt="lit-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/lit-icon-dark.svg"
+                  alt="lit-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">1-lit / 2.5 km</span>
+              </div>
+            </div>
+          </li>
+          <li
+            class="card sport all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+          >
+            <h3 class="text-2xl font-semibold mb-2">Mercedes s class</h3>
+            <p class="text-[#555555] grayText duration-200 mb-4">
+              Full-size Car
+            </p>
+            <img
+              src="./images/products/sport2.png"
+              alt="car-img"
+              class="w-full scale-110 mb-4"
+            />
+            <div class="card-footer flex flex-wrap">
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/user-icon.svg"
+                  alt="user-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/user-icon-dark.svg"
+                  alt="user-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">5 Seats</span>
+              </div>
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/auto-icon.svg"
+                  alt="auto-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/auto-icon-dark.svg"
+                  alt="auto-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">Automatic</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/year-icon.svg"
+                  alt="year-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/year-icon-dark.svg"
+                  alt="year-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">21+ Years</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/lit-icon.svg"
+                  alt="lit-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/lit-icon-dark.svg"
+                  alt="lit-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">1-lit / 2.5 km</span>
+              </div>
+            </div>
+          </li>
+          <li
+            class="card sport all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+          >
+            <h3 class="text-2xl font-semibold mb-2">Lamborghini urus</h3>
+            <p class="text-[#555555] grayText duration-200 mb-4">
+              Mid-size Car
+            </p>
+            <img
+              src="./images/products/sport3.png"
+              alt="car-img"
+              class="w-full scale-110 mb-4"
+            />
+            <div class="card-footer flex flex-wrap">
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/user-icon.svg"
+                  alt="user-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/user-icon-dark.svg"
+                  alt="user-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">5 Seats</span>
+              </div>
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/auto-icon.svg"
+                  alt="auto-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/auto-icon-dark.svg"
+                  alt="auto-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">Automatic</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/year-icon.svg"
+                  alt="year-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/year-icon-dark.svg"
+                  alt="year-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">21+ Years</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/lit-icon.svg"
+                  alt="lit-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/lit-icon-dark.svg"
+                  alt="lit-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">1-lit / 2.5 km</span>
+              </div>
+            </div>
+          </li>
+          <li
+            class="card sport all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+          >
+            <h3 class="text-2xl font-semibold mb-2">Mercedes g63 amg</h3>
+            <p class="text-[#555555] grayText duration-200 mb-4">
+              Mid-size SUV
+            </p>
+            <img
+              src="./images/products/sport4.png"
+              alt="car-img"
+              class="w-full scale-110 mb-4"
+            />
+            <div class="card-footer flex flex-wrap">
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/user-icon.svg"
+                  alt="user-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/user-icon-dark.svg"
+                  alt="user-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">5 Seats</span>
+              </div>
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/auto-icon.svg"
+                  alt="auto-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/auto-icon-dark.svg"
+                  alt="auto-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">Automatic</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/year-icon.svg"
+                  alt="year-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/year-icon-dark.svg"
+                  alt="year-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">21+ Years</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/lit-icon.svg"
+                  alt="lit-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/lit-icon-dark.svg"
+                  alt="lit-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">1-lit / 2.5 km</span>
+              </div>
+            </div>
+          </li>
+
+          <!-- Vans Cars -->
+          <li
+            class="card vans all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+          >
+            <h3 class="text-2xl font-semibold mb-2">
+              15-Passenger Ford Transit
+            </h3>
+            <p class="text-[#555555] grayText duration-200 mb-4">
+              Full-size Car
+            </p>
+            <img
+              src="./images/products/vans1.png"
+              alt="car-img"
+              class="w-full scale-110 mb-4"
+            />
+            <div class="card-footer flex flex-wrap">
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/user-icon.svg"
+                  alt="user-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/user-icon-dark.svg"
+                  alt="user-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">5 Seats</span>
+              </div>
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/auto-icon.svg"
+                  alt="auto-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/auto-icon-dark.svg"
+                  alt="auto-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">Automatic</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/year-icon.svg"
+                  alt="year-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/year-icon-dark.svg"
+                  alt="year-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">21+ Years</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/lit-icon.svg"
+                  alt="lit-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/lit-icon-dark.svg"
+                  alt="lit-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">1-lit / 2.5 km</span>
+              </div>
+            </div>
+          </li>
+          <li
+            class="card vans all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+          >
+            <h3 class="text-2xl font-semibold mb-2">Chrysler Pacifica</h3>
+            <p class="text-[#555555] grayText duration-200 mb-4">
+              Full-size Car
+            </p>
+            <img
+              src="./images/products/vans2.png"
+              alt="car-img"
+              class="w-full scale-110 mb-4"
+            />
+            <div class="card-footer flex flex-wrap">
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/user-icon.svg"
+                  alt="user-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/user-icon-dark.svg"
+                  alt="user-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">5 Seats</span>
+              </div>
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/auto-icon.svg"
+                  alt="auto-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/auto-icon-dark.svg"
+                  alt="auto-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">Automatic</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/year-icon.svg"
+                  alt="year-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/year-icon-dark.svg"
+                  alt="year-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">21+ Years</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/lit-icon.svg"
+                  alt="lit-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/lit-icon-dark.svg"
+                  alt="lit-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">1-lit / 2.5 km</span>
+              </div>
+            </div>
+          </li>
+          <li
+            class="card vans all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+          >
+            <h3 class="text-2xl font-semibold mb-2">Chevy Silverado 4500HD</h3>
+            <p class="text-[#555555] grayText duration-200 mb-4">
+              Mid-size Car
+            </p>
+            <img
+              src="./images/products/vans3.png"
+              alt="car-img"
+              class="w-full scale-110 mb-4"
+            />
+            <div class="card-footer flex flex-wrap">
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/user-icon.svg"
+                  alt="user-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/user-icon-dark.svg"
+                  alt="user-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">5 Seats</span>
+              </div>
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/auto-icon.svg"
+                  alt="auto-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/auto-icon-dark.svg"
+                  alt="auto-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">Automatic</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/year-icon.svg"
+                  alt="year-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/year-icon-dark.svg"
+                  alt="year-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">21+ Years</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/lit-icon.svg"
+                  alt="lit-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/lit-icon-dark.svg"
+                  alt="lit-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">1-lit / 2.5 km</span>
+              </div>
+            </div>
+          </li>
+          <li
+            class="card vans all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+          >
+            <h3 class="text-2xl font-semibold mb-2">
+              12-Passenger Ford Transit
+            </h3>
+            <p class="text-[#555555] grayText duration-200 mb-4">
+              Mid-size SUV
+            </p>
+            <img
+              src="./images/products/vans4.png"
+              alt="car-img"
+              class="w-full scale-110 mb-4"
+            />
+            <div class="card-footer flex flex-wrap">
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/user-icon.svg"
+                  alt="user-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/user-icon-dark.svg"
+                  alt="user-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">5 Seats</span>
+              </div>
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/auto-icon.svg"
+                  alt="auto-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/auto-icon-dark.svg"
+                  alt="auto-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">Automatic</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/year-icon.svg"
+                  alt="year-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/year-icon-dark.svg"
+                  alt="year-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">21+ Years</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/lit-icon.svg"
+                  alt="lit-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/lit-icon-dark.svg"
+                  alt="lit-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">1-lit / 2.5 km</span>
+              </div>
+            </div>
+          </li>
+          <li
+            class="card vans all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+          >
+            <h3 class="text-2xl font-semibold mb-2">
+              15-Passenger Ford Transit
+            </h3>
+            <p class="text-[#555555] grayText duration-200 mb-4">
+              Full-size SUV
+            </p>
+            <img
+              src="./images/products/vans5.png"
+              alt="car-img"
+              class="w-full scale-110 mb-4"
+            />
+            <div class="card-footer flex flex-wrap">
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/user-icon.svg"
+                  alt="user-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/user-icon-dark.svg"
+                  alt="user-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">5 Seats</span>
+              </div>
+              <div class="w-1/2 flex items-center mb-6">
+                <img
+                  src="./images/products/auto-icon.svg"
+                  alt="auto-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/auto-icon-dark.svg"
+                  alt="auto-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">Automatic</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/year-icon.svg"
+                  alt="year-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/year-icon-dark.svg"
+                  alt="year-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">21+ Years</span>
+              </div>
+              <div class="w-1/2 flex items-center">
+                <img
+                  src="./images/products/lit-icon.svg"
+                  alt="lit-icon"
+                  class="light-img"
+                />
+                <img
+                  src="./images/products/lit-icon-dark.svg"
+                  alt="lit-icon"
+                  class="dark-img hidden"
+                />
+                <span class="ml-3">1-lit / 2.5 km</span>
+              </div>
+            </div>
+          </li>
+          <li
+            class="card vans all-cars px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+          >
+            <h3 class="text-2xl font-semibold mb-2">Mercedes-Benz Sprinter</h3>
+            <p class="text-[#555555] grayText duration-200 mb-4">
+              Full-size Car
+            </p>
+            <img
+              src="./images/products/vans6.png"
               alt="car-img"
               class="w-full scale-110 mb-4"
             />
