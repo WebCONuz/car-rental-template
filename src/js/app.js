@@ -6,8 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const menuWrapper = document.querySelector(".wrapper");
   const covered = document.querySelector(".header-cover");
   openBtn.addEventListener("click", function () {
-    menuWrapper.classList.toggle("sm:-right-full", "-right-[150%]");
-    menuWrapper.classList.toggle("right-0");
+    menuWrapper.classList.toggle("active");
     covered.classList.toggle("clicked");
   });
   window.addEventListener("click", (e) => {
@@ -15,8 +14,7 @@ window.addEventListener("DOMContentLoaded", function () {
       e.target.classList.contains("header-cover") ||
       e.target.classList.contains("close-btn")
     ) {
-      menuWrapper.classList.add("sm:-right-full", "-right-[150%]");
-      menuWrapper.classList.remove("right-0");
+      menuWrapper.classList.remove("active");
       covered.classList.remove("clicked");
     }
   });

@@ -33,6 +33,14 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body class="overflow-x-hidden duration-200">
+    <!-- Top Btn -->
+    <a
+      href="#intro"
+      class="w-[70px] h-[70px] bg-[#299764] flex items-center justify-center text-white fixed z-30 right-3 bottom-3 sm:bottom-8 sm:right-12 rounded-full"
+    >
+      <i class="bx bx-up-arrow-alt text-3xl"></i>
+    </a>
+
     <!-- Header Section -->
     <header
       id="header"
@@ -59,17 +67,17 @@
         </button>
 
         <div
-          class="wrapper flex bg-white bgWhite lg:bg-transparent fixed top-0 -right-[150%] sm:-right-full z-20 duration-300 flex-col h-screen p-8 lg:p-0 lg:items-center lg:justify-between lg:h-auto lg:flex-row lg:static lg:ml-5"
+          class="wrapper flex bg-white bgWhite lg:bg-transparent fixed top-0 z-20 duration-300 flex-col h-screen p-4 sm:p-8 lg:p-0 lg:items-center lg:justify-between lg:h-auto lg:flex-row lg:static lg:ml-5"
         >
           <!-- menu list -->
           <ul class="header__menu lg:flex items-center">
             <li
-              class="header__menu--item mb-8 lg:mb-0 flex items-center justify-between lg:hidden"
+              class="header__menu--item mb-4 sm:mb-8 lg:mb-0 flex items-center justify-between lg:hidden"
             >
               <img
                 src="./images/header/logo.png"
                 alt="logo-icon"
-                class="w-[150px]"
+                class="w-[120px] sm:w-[150px]"
               />
               <button
                 id="close-btn"
@@ -78,17 +86,17 @@
                 <i class="bx bx-x close-btn text-2xl"></i>
               </button>
             </li>
-            <li class="header__menu--item mb-6 lg:mb-0">
+            <li class="header__menu--item mb-5 sm:mb-6 lg:mb-0">
               <a
                 href="#"
-                class="block lg:py-[10px] lg:px-4 text-2xl lg:inline-block lg:rounded-[50px] lg:hover:bg-[#F5F5F5] hover-color-gray duration-200 lg:text-lg xl:py-3 xl:px-[18px]"
+                class="block lg:py-[10px] lg:px-4 text-xl sm:text-2xl lg:inline-block lg:rounded-[50px] lg:hover:bg-[#F5F5F5] hover-color-gray duration-200 lg:text-lg xl:py-3 xl:px-[18px]"
                 >Categories</a
               >
             </li>
-            <li class="header__menu--item relative mb-7 lg:mb-0">
+            <li class="header__menu--item relative mb-5 sm:mb-6 lg:mb-0">
               <a
                 href="#"
-                class="block lg:py-[10px] lg:px-4 text-2xl lg:inline-block lg:rounded-[50px] lg:hover:bg-[#F5F5F5] hover-color-gray duration-200 lg:text-lg xl:py-3 xl:px-[18px]"
+                class="block lg:py-[10px] lg:px-4 text-xl sm:text-2xl lg:inline-block lg:rounded-[50px] lg:hover:bg-[#F5F5F5] hover-color-gray duration-200 lg:text-lg xl:py-3 xl:px-[18px]"
               >
                 About Us
                 <i class="bx bx-chevron-down ml-3 hidden lg:inline-block"></i>
@@ -96,64 +104,64 @@
               <ul
                 class="about-submenu absolute lg:top-[60px] left-0 bg-white bgWhite elm-shadow drop-shadow-[0_01px_01px_rgba(255,255,255,0.2)] lg:p-2 rounded-xl duration-200 opacity-0"
               >
-                <li class="submenu__item my-3 lg:my-0">
+                <li class="submenu__item my-1 sm:my-3 lg:my-0">
                   <a
                     href="#"
-                    class="text-xl text-[#555555] grayText block min-w-[130px] mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] hover-color-gray lg:text-[#000] lgTextDark duration-200 lg:text-lg rounded-xl lg:mb-1"
+                    class="text-lg sm:text-xl text-[#555555] grayText block min-w-[130px] sm:mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] hover-color-gray lg:text-[#000] lgTextDark duration-200 lg:text-lg rounded-xl lg:mb-1"
                     >News</a
                   >
                 </li>
-                <li class="submenu__item mb-3 lg:mb-0">
+                <li class="submenu__item mb-1 sm:mb-3 lg:mb-0">
                   <a
                     href="#"
-                    class="text-xl text-[#555555] grayText block min-w-[130px] mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] hover-color-gray lg:text-[#000] lgTextDark duration-200 lg:text-lg rounded-xl lg:mb-1"
+                    class="text-lg sm:text-xl text-[#555555] grayText block min-w-[130px] sm:mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] hover-color-gray lg:text-[#000] lgTextDark duration-200 lg:text-lg rounded-xl lg:mb-1"
                     >Careers</a
                   >
                 </li>
-                <li class="submenu__item mb-3 lg:mb-0">
+                <li class="submenu__item mb-1 sm:mb-3 lg:mb-0">
                   <a
                     href="#"
-                    class="text-xl text-[#555555] grayText block min-w-[130px] mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] hover-color-gray lg:text-[#000] lgTextDark duration-200 lg:text-lg rounded-xl lg:mb-1"
+                    class="text-lg sm:text-xl text-[#555555] grayText block min-w-[130px] sm:mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] hover-color-gray lg:text-[#000] lgTextDark duration-200 lg:text-lg rounded-xl lg:mb-1"
                     >Locations</a
                   >
                 </li>
               </ul>
             </li>
-            <li class="header__menu--item relative mb-7 lg:mb-0">
+            <li class="header__menu--item relative mb-5 sm:mb-7 lg:mb-0">
               <a
                 href="#"
-                class="block lg:py-[10px] lg:px-4 text-2xl lg:inline-block lg:rounded-[50px] lg:hover:bg-[#F5F5F5] hover-color-gray duration-200 lg:text-lg xl:py-3 xl:px-[18px]"
+                class="block lg:py-[10px] lg:px-4 text-xl sm:text-2xl lg:inline-block lg:rounded-[50px] lg:hover:bg-[#F5F5F5] hover-color-gray duration-200 lg:text-lg xl:py-3 xl:px-[18px]"
                 >Help center
                 <i class="bx bx-chevron-down ml-3 hidden lg:inline-block"></i
               ></a>
               <ul
                 class="help-submenu absolute lg:top-[60px] left-0 bg-white bgWhite elm-shadow lg:p-2 rounded-xl duration-200 opacity-0"
               >
-                <li class="submenu__item my-3 lg:my-0">
+                <li class="submenu__item my-1 sm:my-3 lg:my-0">
                   <a
                     href="#"
-                    class="text-xl text-[#555555] grayText block min-w-[130px] mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] hover-color-gray lg:text-[#000] lgTextDark duration-200 lg:text-lg rounded-xl lg:mb-1"
+                    class="text-lg sm:text-xl text-[#555555] grayText block min-w-[130px] mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] hover-color-gray lg:text-[#000] lgTextDark duration-200 lg:text-lg rounded-xl lg:mb-1"
                     >FAQ</a
                   >
                 </li>
-                <li class="submenu__item mb-3 lg:mb-0">
+                <li class="submenu__item mb-1 sm:mb-3 lg:mb-0">
                   <a
                     href="#"
-                    class="text-xl text-[#555555] grayText block min-w-[130px] mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] hover-color-gray lg:text-[#000] lgTextDark duration-200 lg:text-lg rounded-xl lg:mb-1"
+                    class="text-lg sm:text-xl text-[#555555] grayText block min-w-[130px] mt-0 sm:mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] hover-color-gray lg:text-[#000] lgTextDark duration-200 lg:text-lg rounded-xl lg:mb-1"
                     >Contact Us</a
                   >
                 </li>
-                <li class="submenu__item mb-3 lg:mb-0">
+                <li class="submenu__item mb-1 sm:mb-3 lg:mb-0">
                   <a
                     href="#"
-                    class="text-xl text-[#555555] grayText block min-w-[130px] mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] hover-color-gray lg:text-[#000] lgTextDark duration-200 lg:text-lg rounded-xl lg:mb-1"
+                    class="text-lg sm:text-xl text-[#555555] grayText block min-w-[130px] mt-0 sm:mt-2 lg:py-2 lg:px-3 lg:hover:bg-[#F5F5F5] hover-color-gray lg:text-[#000] lgTextDark duration-200 lg:text-lg rounded-xl lg:mb-1"
                     >Term and Conditions</a
                   >
                 </li>
               </ul>
             </li>
             <li
-              class="header__menu--item text-2xl sm:hidden cursor-default mr-6"
+              class="header__menu--item text-xl sm:hidden cursor-default mr-6"
             >
               +998 99 542 63 07
             </li>
@@ -1609,7 +1617,7 @@
     <section id="company" class="company py-[100px] sm:py-[160px]">
       <div class="container main-container">
         <h3 class="text-2xl mb-6 sm:mb-[34px]">More than 50 brands of cars</h3>
-        <div class="overflow-x-scroll lg:overflow-auto border border-green-600">
+        <div class="overflow-x-scroll lg:overflow-auto">
           <ul
             class="company__list flex lg:justify-between items-center w-[720px] sm:w-[1020px] lg:w-full"
           >
