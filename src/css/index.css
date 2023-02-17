@@ -57,6 +57,11 @@ body {
     top: 0;
   }
 }
+@media screen and (max-width: 640px) {
+  .header .wrapper {
+    width: 90% !important;
+  }
+}
 
 /* Intro Section ------------------------------------------ */
 
@@ -115,6 +120,18 @@ body {
   transition: 0.2s linear;
   opacity: 1;
 }
+@media screen and (max-width: 640px) {
+  #intro .swiper .swiper-button-prev {
+    display: none !important;
+  }
+  #intro .swiper .swiper-button-next {
+    display: none !important;
+  }
+  #intro .swiper .swiper-pagination {
+    text-align: center;
+    padding-left: 0;
+  }
+}
 
 /* Description Section ------------------------------------------------ */
 .line {
@@ -151,6 +168,12 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   /* text-fill-color: transparent; */
+}
+.instagram-btn:hover a {
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .descr-right {
   width: calc(100% - 470px) !important;
@@ -205,16 +228,25 @@ body {
 #description .swiper .swiper-scrollbar .swiper-scrollbar-drag {
   background-color: #fff;
 }
-
-/* Company Section ------------------------------------------ */
-
-#company .swiper.company-swiper {
-  width: 100%;
-  border: 1px solid red;
+@media screen and (max-width: 1024px) {
+  .descr-right {
+    width: 100% !important;
+    height: 450px;
+  }
 }
-#company .swiper.company-swiper .swiper-slide {
-  width: 140px !important;
-  margin-right: 66px;
+@media screen and (max-width: 640px) {
+  .descr-right {
+    height: 385px;
+  }
+  #description .swiper .swiper-button-prev {
+    display: none !important;
+  }
+  #description .swiper .swiper-button-next {
+    display: none !important;
+  }
+  #description .swiper .swiper-scrollbar {
+    width: calc(100% - 20px);
+  }
 }
 
 /* Service Section ------------------------------------------ */
@@ -229,5 +261,16 @@ body {
   display: inline-block;
 }
 #service .card:hover img.unhovered {
+  display: none;
+}
+
+/* Worker Section ------------------------------------------ */
+#worker .card:hover p {
+  color: #fff;
+}
+#worker .card:hover .hovered {
+  display: block;
+}
+#worker .card:hover .unhovered {
   display: none;
 }

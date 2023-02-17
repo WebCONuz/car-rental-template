@@ -59,7 +59,7 @@
         </button>
 
         <div
-          class="wrapper flex bg-white bgWhite lg:bg-transparent fixed top-0 -right-full z-20 duration-300 flex-col h-screen p-8 lg:p-0 lg:items-center lg:justify-between lg:h-auto lg:flex-row lg:static lg:ml-5"
+          class="wrapper flex bg-white bgWhite lg:bg-transparent fixed top-0 -right-[150%] sm:-right-full z-20 duration-300 flex-col h-screen p-8 lg:p-0 lg:items-center lg:justify-between lg:h-auto lg:flex-row lg:static lg:ml-5"
         >
           <!-- menu list -->
           <ul class="header__menu lg:flex items-center">
@@ -73,7 +73,7 @@
               />
               <button
                 id="close-btn"
-                class="close-btn bg-[#F5F5F5] color-gray duration-200 w-[58px] h-[58px] rounded-full"
+                class="close-btn bg-[#F5F5F5] color-gray duration-200 w-[48px] sm:w-[58px] h-[48px] sm:h-[58px] rounded-full"
               >
                 <i class="bx bx-x close-btn text-2xl"></i>
               </button>
@@ -119,7 +119,7 @@
                 </li>
               </ul>
             </li>
-            <li class="header__menu--item relative lg:mb-0">
+            <li class="header__menu--item relative mb-7 lg:mb-0">
               <a
                 href="#"
                 class="block lg:py-[10px] lg:px-4 text-2xl lg:inline-block lg:rounded-[50px] lg:hover:bg-[#F5F5F5] hover-color-gray duration-200 lg:text-lg xl:py-3 xl:px-[18px]"
@@ -152,12 +152,17 @@
                 </li>
               </ul>
             </li>
+            <li
+              class="header__menu--item text-2xl cursor-default mr-6 lg:hidden xl:block"
+            >
+              +998 99 542 63 07
+            </li>
           </ul>
 
           <!-- features -->
           <ul class="header__features flex items-center mt-auto lg:mt-0">
             <li
-              class="header__features--item text-lg font-semibold cursor-default mr-6 lg:hidden xl:block"
+              class="header__features--item hidden sm:block text-lg font-semibold cursor-default mr-6 lg:hidden xl:block"
             >
               +998 99 542 63 07
             </li>
@@ -191,15 +196,19 @@
               <img
                 src="./images/intro/intro1.jpg"
                 alt="intro-img"
-                class="rounded-xl"
+                class="rounded-xl h-[300px] object-cover sm:h-auto"
               />
               <div
-                class="intro__slider--item-title max-w-[416px] absolute top-14 left-1/2 -translate-x-1/2"
+                class="intro__slider--item-title w-[283px] sm:max-w-[416px] absolute top-14 left-1/2 -translate-x-1/2"
               >
-                <h1 class="font-semibold text-4xl text-center text-white mb-3">
+                <h1
+                  class="font-semibold w-full text-2xl sm:text-4xl text-center text-white mb-[6px] sm:mb-3"
+                >
                   Compact cars
                 </h1>
-                <p class="font-normal text-center text-white opacity-90">
+                <p
+                  class="font-normal text-xs sm:text-base text-center text-white opacity-90"
+                >
                   Rent cars as you are comfortable and where you are
                   comfortable.
                 </p>
@@ -209,15 +218,19 @@
               <img
                 src="./images/intro/intro2.jpg"
                 alt="intro-img"
-                class="rounded-xl"
+                class="rounded-xl h-[300px] object-cover sm:h-auto"
               />
               <div
-                class="intro__slider--item-title max-w-[416px] absolute top-14 left-1/2 -translate-x-1/2"
+                class="intro__slider--item-title w-[283px] sm:max-w-[416px] absolute top-14 left-1/2 -translate-x-1/2"
               >
-                <h1 class="font-semibold text-4xl text-center text-white mb-3">
+                <h1
+                  class="font-semibold text-2xl sm:text-4xl text-center text-white mb-[6px] sm:mb-3"
+                >
                   Sports cars
                 </h1>
-                <p class="font-normal text-center text-white opacity-90">
+                <p
+                  class="font-normal text-xs sm:text-base text-center text-white opacity-90"
+                >
                   Rent cars as you are comfortable and where you are
                   comfortable.
                 </p>
@@ -227,15 +240,19 @@
               <img
                 src="./images/intro/intro3.jpg"
                 alt="intro-img"
-                class="rounded-xl"
+                class="rounded-xl h-[300px] object-cover sm:h-auto"
               />
               <div
-                class="intro__slider--item-title max-w-[416px] absolute top-14 left-1/2 -translate-x-1/2"
+                class="intro__slider--item-title w-[283px] sm:max-w-[416px] absolute top-14 left-1/2 -translate-x-1/2"
               >
-                <h1 class="font-semibold text-4xl text-center text-white mb-3">
+                <h1
+                  class="font-semibold text-2xl sm:text-4xl text-center text-white mb-[6px] sm:mb-3"
+                >
                   Vans
                 </h1>
-                <p class="font-normal text-center text-white opacity-90">
+                <p
+                  class="font-normal text-xs sm:text-base text-center text-white opacity-90"
+                >
                   Rent cars as you are comfortable and where you are
                   comfortable.
                 </p>
@@ -252,19 +269,19 @@
 
         <!-- Search section -->
         <div
-          class="intro-search max-w-[600px] mx-auto elm-shadow rounded-[50px] p-2 overflow-hidden -translate-y-1/2 bg-white bgWhite duration-200 relative z-10"
+          class="intro-search max-w-[330px] sm:max-w-[600px] mx-auto elm-shadow rounded-[50px] p-1 sm:p-2 overflow-hidden -translate-y-1/2 bg-white bgWhite duration-200 relative z-10"
         >
           <form action="#" class="flex justify-between w-full">
             <input
               type="text"
               placeholder="Find the car of your dreams"
-              class="border-none focus:border-none focus:outline-none focus:ring-0 text-lg py-3 px-7 flex-grow bg-white bgWhite duration-200"
+              class="border-none focus:border-none focus:outline-none focus:ring-0 text-lg py-1 px-5 sm:py-3 sm:px-7 flex-grow bg-white bgWhite duration-200"
             />
             <button
               type="submit"
-              class="w-[58px] h-[58px] bg-[#299764] text-white flex items-center justify-center rounded-full"
+              class="w-[52px] sm:w-[58px] h-[52px] sm:h-[58px] bg-[#299764] text-white flex items-center justify-center rounded-full"
             >
-              <i class="bx bx-search text-2xl"></i>
+              <i class="bx bx-search text-xl sm:text-2xl"></i>
             </button>
           </form>
         </div>
@@ -272,13 +289,15 @@
     </section>
 
     <!-- Product Section -->
-    <section id="product" class="product pt-24 pb-36">
+    <section id="product" class="product pt-16 sm:pt-24 pb-24 sm:pb-36">
       <div class="container main-container">
         <div class="product__title max-w-[575px] mx-auto mb-10">
-          <h2 class="font-semibold text-4xl text-center mb-2">
+          <h2
+            class="font-semibold text-2xl sm:text-4xl text-center mb-[6px] sm:mb-2"
+          >
             Choose the car of your dreams
           </h2>
-          <p class="font-normal text-center opacity-90">
+          <p class="font-normal text-center opacity-90 text-xs sm:text-base">
             We provide our customers with the most incredible driving emotions.
             That is why there are only world-class cars in our fleet
           </p>
@@ -286,21 +305,21 @@
         <ul class="product__nav flex justify-center items-center mb-6">
           <li>
             <button
-              class="bg-[#299764] border-[#299764] hover:bg-[#077743] hover:border-[#077743] text-white mx-4 border-2 rounded-[100px] duration-200 py-5 px-10"
+              class="bg-[#299764] border-[#299764] hover:bg-[#077743] text-sm sm:text-base hover:border-[#077743] text-white mx-[7px] sm:mx-4 border-2 rounded-[100px] duration-200 py-[10px] sm:py-5 px-4 sm:px-10"
             >
               Compact
             </button>
           </li>
           <li>
             <button
-              class="bg-white bgWhite border-[#E5E7EA] btnBorder hover:bg-[#E5E7EA] mx-4 border-2 rounded-[100px] duration-200 py-5 px-10"
+              class="bg-white bgWhite border-[#E5E7EA] btnBorder hover:bg-[#E5E7EA] text-sm sm:text-base mx-[7px] sm:mx-4 border-2 rounded-[100px] duration-200 py-[10px] sm:py-5 px-4 sm:px-10"
             >
-              Sports cars
+              Sports <span class="hidden sm:inline">cars</span>
             </button>
           </li>
           <li>
             <button
-              class="bg-white bgWhite border-[#E5E7EA] btnBorder hover:bg-[#E5E7EA] mx-4 border-2 rounded-[100px] duration-200 py-5 px-10"
+              class="bg-white bgWhite border-[#E5E7EA] btnBorder hover:bg-[#E5E7EA] text-sm sm:text-base mx-[7px] sm:mx-4 border-2 rounded-[100px] duration-200 py-[10px] sm:py-5 px-4 sm:px-10"
             >
               Vans
             </button>
@@ -308,7 +327,7 @@
         </ul>
         <ul class="flex flex-wrap justify-between">
           <li
-            class="card px-6 py-8 w-[32%] mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+            class="card px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
           >
             <h3 class="text-2xl font-semibold mb-2">Ford Fiesta</h3>
             <p class="text-[#555555] grayText duration-200 mb-4">Economy Car</p>
@@ -373,7 +392,7 @@
             </div>
           </li>
           <li
-            class="card px-6 py-8 w-[32%] mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+            class="card px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
           >
             <h3 class="text-2xl font-semibold mb-2">Nissan Versa</h3>
             <p class="text-[#555555] grayText duration-200 mb-4">Compact Car</p>
@@ -438,7 +457,7 @@
             </div>
           </li>
           <li
-            class="card px-6 py-8 w-[32%] mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+            class="card px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
           >
             <h3 class="text-2xl font-semibold mb-2">Toyota Corolla</h3>
             <p class="text-[#555555] grayText duration-200 mb-4">
@@ -505,7 +524,7 @@
             </div>
           </li>
           <li
-            class="card px-6 py-8 w-[32%] mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+            class="card px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
           >
             <h3 class="text-2xl font-semibold mb-2">Nissan Rogue</h3>
             <p class="text-[#555555] grayText duration-200 mb-4">
@@ -572,7 +591,7 @@
             </div>
           </li>
           <li
-            class="card px-6 py-8 w-[32%] mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+            class="card px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
           >
             <h3 class="text-2xl font-semibold mb-2">Chevy Traverse</h3>
             <p class="text-[#555555] grayText duration-200 mb-4">
@@ -639,7 +658,7 @@
             </div>
           </li>
           <li
-            class="card px-6 py-8 w-[32%] mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
+            class="card px-6 py-8 w-full sm:w-[49%] lg:w-[32%] mb-[10px] sm:mb-6 bg-[#F5F5F5] color-gray duration-200 rounded-xl overflow-hidden"
           >
             <h3 class="text-2xl font-semibold mb-2">Nissan Altima</h3>
             <p class="text-[#555555] grayText duration-200 mb-4">
@@ -721,44 +740,58 @@
       id="description"
       class="desvription py-24 bg-[#F5F5F5] color-gray duration-200"
     >
-      <div class="container main-container flex">
+      <div class="container main-container flex flex-col lg:flex-row">
         <div
-          class="bg-white bgWhite duration-200 p-[75px] py-[60px] max-w-[470px] rounded-l-xl"
+          class="bg-white bgWhite duration-200 p-[20px] sm:p-[50px] lg:p-[75px] w-full rounded-t-xl lg:w-[470px] lg:rounded-l-xl"
         >
-          <p class="mb-4 flex">
-            <img
-              src="./images/descr/google-icon.svg"
-              alt="google-icon"
-              class="w-[15px]"
-            />
-            <a href="#" class="text-[#4285F4] ml-2">From Google</a>
-          </p>
-          <h1 class="text-[38px] mb-[30px]">
-            Hear what the community is saying
-          </h1>
-          <div class="line mb-[30px] h-[2px]"></div>
-          <p class="text-sm text-[#555555] grayText duration-200 mb-4">
-            More interesting reviews on Instagram
-          </p>
-          <div class="instagram-btn rounded-[100px] inline-block p-[2px]">
-            <div
-              class="w-full h-full bg-white bgWhite duration-200 rounded-[100px]"
-            >
-              <a
-                href="#"
-                class="py-[18px] px-[50px] bg-white bgWhite duration-200 rounded-[100px] inline-block text-lg"
-                >Instagram</a
+          <div class="flex flex-col pb-1 sm:pb-0 sm:flex-row lg:flex-col">
+            <div class="w-full sm:w-[40%] md:w-1/2 lg:w-full">
+              <p class="mb-4 flex">
+                <img
+                  src="./images/descr/google-icon.svg"
+                  alt="google-icon"
+                  class="w-[15px]"
+                />
+                <a href="#" class="text-[#4285F4] ml-2">From Google</a>
+              </p>
+              <h1
+                class="text-[38px] sm:text-2xl mb-[30px] sm:mb-0 lg:text-[38px] lg:leading-[50px] lg:mb-[30px]"
               >
+                Hear what the community is saying
+              </h1>
+            </div>
+            <div
+              class="w-full sm:w-[60%] md:w-1/2 lg:w-full flex flex-col sm:flex-row lg:flex-col md:pl-4 lg:pl-0"
+            >
+              <div
+                class="line w-full mb-[30px] sm:mb-0 sm:w-[3px] h-[2px] sm:h-[120px] mr-6 lg:lr-0 lg:w-[190px] lg:mb-[30px] lg:h-[2px]"
+              ></div>
+              <div class="max-w-[275px] sm:ml-auto lg:ml-0">
+                <p class="text-sm text-[#555555] grayText duration-200 mb-4">
+                  More interesting reviews on Instagram
+                </p>
+                <div class="instagram-btn rounded-[100px] inline-block p-[2px]">
+                  <div
+                    class="w-full h-full bg-white bgWhite duration-200 rounded-[100px] hover:bg-transparent"
+                  >
+                    <a
+                      href="#"
+                      class="py-[18px] px-[50px] bg-white bgWhite duration-200 rounded-[100px] inline-block text-lg"
+                      >Instagram</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="descr-right bg-[#299764] py-[50px] pl-[40px] rounded-r-xl overflow-hidden"
+          class="descr-right overflow-hidden bg-[#299764] py-5 pl-4 sm:py-[50px] sm:pl-[40px] rounded-b-xl lg:rounded-r-xl"
         >
           <div class="description__carousel swiper mySwiper">
             <ul class="carousel__list swiper-wrapper h-auto">
               <li
-                class="carousel__list--item swiper-slide p-6 rounded-xl bg-white bgWhite duration-200 w-[420px]"
+                class="carousel__list--item swiper-slide p-6 rounded-xl bg-white bgWhite duration-200 w-[326px] sm:w-[420px]"
               >
                 <div class="item-head flex items-center mb-[14px]">
                   <img src="./images//descr/person1.svg" alt="person-img" />
@@ -798,7 +831,7 @@
                 </div>
               </li>
               <li
-                class="carousel__list--item swiper-slide p-6 rounded-xl bg-white bgWhite duration-200 w-[420px]"
+                class="carousel__list--item swiper-slide p-6 rounded-xl bg-white bgWhite duration-200 w-[326px] sm:w-[420px]"
               >
                 <div class="item-head flex items-center mb-[14px]">
                   <img src="./images//descr/person1.svg" alt="person-img" />
@@ -838,7 +871,7 @@
                 </div>
               </li>
               <li
-                class="carousel__list--item swiper-slide p-6 rounded-xl bg-white bgWhite duration-200 w-[420px]"
+                class="carousel__list--item swiper-slide p-6 rounded-xl bg-white bgWhite duration-200 w-[326px] sm:w-[420px]"
               >
                 <div class="item-head flex items-center mb-[14px]">
                   <img src="./images//descr/person1.svg" alt="person-img" />
@@ -890,100 +923,108 @@
     </section>
 
     <!-- Company Section -->
-    <section id="company" class="company py-[160px]">
+    <section id="company" class="company py-[100px] sm:py-[160px]">
       <div class="container main-container">
-        <h3 class="text-2xl mb-[34px]">More than 50 brands of cars</h3>
-        <ul class="company__list flex justify-between items-center">
-          <li class="company__list--item">
-            <img
-              src="./images/company/ford-company.png"
-              alt="company-img"
-              class="w-[140px] h-[40px]"
-            />
-          </li>
-          <li class="company__list--item">
-            <img
-              src="./images/company/nissan-company.png"
-              alt="company-img"
-              class="w-[140px] h-[40px] light-img"
-            />
-            <img
-              src="./images/company/nissan-company-dark.png"
-              alt="company-img"
-              class="w-[140px] h-[40px] dark-img hidden"
-            />
-          </li>
-          <li class="company__list--item">
-            <img
-              src="./images/company/toyota-company.png"
-              alt="company-img"
-              class="w-[140px] h-[40px] light-img"
-            />
-            <img
-              src="./images/company/toyota-company-dark.png"
-              alt="company-img"
-              class="w-[140px] h-[40px] dark-img hidden"
-            />
-          </li>
-          <li class="company__list--item">
-            <img
-              src="./images/company/dodge-company.png"
-              alt="company-img"
-              class="w-[140px] h-[40px] light-img"
-            />
-            <img
-              src="./images/company/dodge-company-dark.png"
-              alt="company-img"
-              class="w-[140px] h-[40px] dark-img hidden"
-            />
-          </li>
-          <li class="company__list--item">
-            <img
-              src="./images/company/hyundai-company.png"
-              alt="company-img"
-              class="w-[140px] h-[40px] light-img"
-            />
-            <img
-              src="./images/company/hyundai-company-dark.png"
-              alt="company-img"
-              class="w-[140px] h-[40px] dark-img hidden"
-            />
-          </li>
-          <li class="company__list--item">
-            <img
-              src="./images/company/jeep-company.png"
-              alt="company-img"
-              class="w-[140px] h-[40px] light-img"
-            />
-            <img
-              src="./images/company/jeep-company-dark.png"
-              alt="company-img"
-              class="w-[140px] h-[40px] dark-img hidden"
-            />
-          </li>
-        </ul>
+        <h3 class="text-2xl mb-6 sm:mb-[34px]">More than 50 brands of cars</h3>
+        <div class="overflow-x-scroll lg:overflow-auto border border-green-600">
+          <ul
+            class="company__list flex lg:justify-between items-center w-[720px] sm:w-[1020px] lg:w-full"
+          >
+            <li class="company__list--item mx-[10px] sm:mx-4 lg:mx-0">
+              <img
+                src="./images/company/ford-company.png"
+                alt="company-img"
+                class="w-[100px] sm:w-[140px] h-[28px] sm:h-[40px]"
+              />
+            </li>
+            <li class="company__list--item mx-[10px] sm:mx-4 lg:mx-0">
+              <img
+                src="./images/company/nissan-company.png"
+                alt="company-img"
+                class="w-[100px] sm:w-[140px] h-[28px] sm:h-[40px] light-img"
+              />
+              <img
+                src="./images/company/nissan-company-dark.png"
+                alt="company-img"
+                class="w-[100px] sm:w-[140px] h-[28px] sm:h-[40px] dark-img hidden"
+              />
+            </li>
+            <li class="company__list--item mx-[10px] sm:mx-4 lg:mx-0">
+              <img
+                src="./images/company/toyota-company.png"
+                alt="company-img"
+                class="w-[100px] sm:w-[140px] h-[28px] sm:h-[40px] light-img"
+              />
+              <img
+                src="./images/company/toyota-company-dark.png"
+                alt="company-img"
+                class="w-[100px] sm:w-[140px] h-[28px] sm:h-[40px] dark-img hidden"
+              />
+            </li>
+            <li class="company__list--item mx-[10px] sm:mx-4 lg:mx-0">
+              <img
+                src="./images/company/dodge-company.png"
+                alt="company-img"
+                class="w-[100px] sm:w-[140px] h-[28px] sm:h-[40px] light-img"
+              />
+              <img
+                src="./images/company/dodge-company-dark.png"
+                alt="company-img"
+                class="w-[100px] sm:w-[140px] h-[28px] sm:h-[40px] dark-img hidden"
+              />
+            </li>
+            <li class="company__list--item mx-[10px] sm:mx-4 lg:mx-0">
+              <img
+                src="./images/company/hyundai-company.png"
+                alt="company-img"
+                class="w-[100px] sm:w-[140px] h-[28px] sm:h-[40px] light-img"
+              />
+              <img
+                src="./images/company/hyundai-company-dark.png"
+                alt="company-img"
+                class="w-[100px] sm:w-[140px] h-[28px] sm:h-[40px] dark-img hidden"
+              />
+            </li>
+            <li class="company__list--item mx-[10px] sm:mx-4 lg:mx-0">
+              <img
+                src="./images/company/jeep-company.png"
+                alt="company-img"
+                class="w-[100px] sm:w-[140px] h-[28px] sm:h-[40px] light-img"
+              />
+              <img
+                src="./images/company/jeep-company-dark.png"
+                alt="company-img"
+                class="w-[100px] sm:w-[140px] h-[28px] sm:h-[40px] dark-img hidden"
+              />
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- Service Section -->
-    <section id="service" class="service mb-[160px]">
+    <section id="service" class="service mb-[100px] sm:mb-[160px]">
       <div class="container main-container">
-        <div class="service__title max-w-[684px] mx-auto mb-10">
-          <h2 class="font-semibold text-4xl text-center mb-2">
+        <div class="service__title max-w-[684px] mx-auto mb-[30px] sm:mb-10">
+          <h2
+            class="font-semibold text-2xl sm:text-4xl text-center mb-[6px] sm:mb-2"
+          >
             Unparalleled service
           </h2>
-          <p class="font-normal text-center opacity-90">
+          <p class="font-normal text-xs sm:text-base text-center opacity-90">
             Whether you are looking for Newark Airport car rental, an insurance
             replacement vehicle or minivan to take on vacation Car rental has it
             all.
           </p>
         </div>
-        <ul class="flex flex-wrap justify-between">
+        <ul class="flex flex-wrap sm:justify-between">
           <li
-            class="card py-10 px-8 bg-[#F5F5F5] color-gray flex items-start justify-between w-[49%] rounded-xl mb-5 hover:bg-[#299764] duration-200"
+            class="card py-[30px] lg:py-10 px-6 lg:px-8 bg-[#F5F5F5] color-gray flex items-start justify-between w-full sm:w-[49%] rounded-xl mb-[10px] sm:mb-5 hover:bg-[#299764] duration-200"
           >
             <div class="card-title">
-              <h3 class="text-[32px] mb-[10px] max-w-[250px] duration-200">
+              <h3
+                class="text-[28px] lg:text-[32px] mb-[10px] max-w-[250px] duration-200"
+              >
                 Book online, pay online
               </h3>
               <p
@@ -1004,10 +1045,12 @@
             />
           </li>
           <li
-            class="card py-10 px-8 bg-[#F5F5F5] color-gray duration-200 flex items-start justify-between w-[49%] rounded-xl mb-5 hover:bg-[#299764]"
+            class="card py-[30px] lg:py-10 px-6 lg:px-8 bg-[#F5F5F5] color-gray duration-200 flex items-start justify-between w-full sm:w-[49%] rounded-xl mb-[10px] sm:mb-5 hover:bg-[#299764]"
           >
             <div class="card-title">
-              <h3 class="text-[32px] mb-[10px] max-w-[290px] duration-200">
+              <h3
+                class="text-[28px] lg:text-[32px] mb-[10px] max-w-[290px] duration-200"
+              >
                 Guaranteed car reservation
               </h3>
               <p
@@ -1029,10 +1072,12 @@
             />
           </li>
           <li
-            class="card py-10 px-8 bg-[#F5F5F5] color-gray duration-200 flex items-start justify-between w-[49%] rounded-xl"
+            class="card py-[30px] lg:py-10 px-6 lg:px-8 bg-[#F5F5F5] color-gray duration-200 flex items-start justify-between mb-[10px] sm:mb-0 w-full sm:w-[49%] rounded-xl hover:bg-[#299764]"
           >
             <div class="card-title">
-              <h3 class="text-[32px] mb-[10px] max-w-[290px]">
+              <h3
+                class="text-[28px] lg:text-[32px] mb-[10px] max-w-[290px] duration-200"
+              >
                 Unparalleled customer service
               </h3>
               <p
@@ -1041,13 +1086,24 @@
                 We're here to help. We pride ourselves in our customer service
               </p>
             </div>
-            <img src="./images/service/user-time-service-icon.svg" alt="user" />
+            <img
+              src="./images/service/user-time-service-icon-hover.svg"
+              alt="user"
+              class="hovered"
+            />
+            <img
+              src="./images/service/user-time-service-icon.svg"
+              alt="user"
+              class="unhovered"
+            />
           </li>
           <li
-            class="card py-10 px-8 bg-[#F5F5F5] color-gray duration-200 flex items-start justify-between w-[49%] rounded-xl"
+            class="card py-[30px] lg:py-10 px-6 lg:px-8 bg-[#F5F5F5] color-gray duration-200 flex items-start justify-between w-full sm:w-[49%] rounded-xl hover:bg-[#299764]"
           >
             <div class="card-title">
-              <h3 class="text-[32px] mb-[10px] max-w-[290px]">
+              <h3
+                class="text-[28px] lg:text-[32px] mb-[10px] max-w-[290px] duration-200"
+              >
                 No reservation or booking fees
               </h3>
               <p
@@ -1057,8 +1113,14 @@
               </p>
             </div>
             <img
+              src="./images/service/booking-service-icon-hover.svg"
+              alt="booking"
+              class="hovered"
+            />
+            <img
               src="./images/service/booking-service-icon.svg"
               alt="booking"
+              class="unhovered"
             />
           </li>
         </ul>
@@ -1066,17 +1128,17 @@
     </section>
 
     <!-- Worker Section -->
-    <section id="worker" class="worker mb-[160px]">
+    <section id="worker" class="worker mb-[100px] sm:mb-[160px]">
       <div class="container main-container">
         <div
-          class="flex rounded-xl border border-gray-300 border-elm py-10 px-[32px] overflow-hidden"
+          class="flex rounded-xl border border-gray-300 border-elm py-6 sm:py-10 px-5 sm:px-[32px] overflow-hidden relative"
         >
-          <div class="w-[60%]">
-            <div class="worker__title max-w-[590px] mb-24">
-              <h2 class="font-semibold text-4xl mb-2">
+          <div class="w-full md:w-[65%] lg:w-[60%]">
+            <div class="worker__title max-w-[590px] mb-10 md:mb-24">
+              <h2 class="font-semibold text-2xl sm:text-4xl mb-[6px] sm:mb-2">
                 Car rental keeps you safe
               </h2>
-              <p class="font-normal opacity-90">
+              <p class="font-normal opacity-90 text-xs sm:text-base">
                 The safety of our employees and renters is our number one
                 priority. In addition to being confident your vehicle is cleaned
                 and sanitized every time you rent, you can also feel confident
@@ -1084,74 +1146,79 @@
                 safety measures currently practiced in our operations.
               </p>
             </div>
-            <div class="flex gap-2">
+            <div class="flex flex-wrap sm:flex-nowrap sm:gap-2">
               <div
-                class="w-[200px] bg-[#F5F5F5] color-gray duration-200 p-4 rounded-xl flex flex-col justify-between"
+                class="card w-full mb-[10px] sm:mb-0 sm:w-[150px] lg:w-[200px] bg-[#F5F5F5] color-gray duration-200 p-4 rounded-xl flex flex-col justify-between hover:bg-[#299764]"
               >
                 <div class="flex justify-end mb-[29px] pt-2 pr-2">
                   <img
                     src="./images/worker/cleaned-icon.svg"
                     alt="icon"
-                    class="w-[18px] light-img"
+                    class="w-[18px] light-img unhovered"
                   />
                   <img
                     src="./images/worker/cleaned-icon-dark.svg"
                     alt="dark-icon"
-                    class="w-[18px] dark-img hidden"
+                    class="w-[18px] dark-img hidden hovered"
                   />
                 </div>
-                <p class="max-h-[66px] overflow-hidden">
+                <p class="max-h-[66px] overflow-hidden duration-200">
                   Every car is thoroughly sanitized and cleaned
                 </p>
               </div>
               <div
-                class="w-[200px] bg-[#F5F5F5] color-gray duration-200 p-4 rounded-xl flex flex-col justify-between"
+                class="card w-full mb-[10px] sm:mb-0 sm:w-[150px] lg:w-[200px] bg-[#F5F5F5] color-gray duration-200 p-4 rounded-xl flex flex-col justify-between hover:bg-[#299764]"
               >
                 <div class="flex justify-end mb-[29px] pt-2 pr-2">
                   <img
                     src="./images/worker/heart-icon.svg"
                     alt="icon"
-                    class="w-[24.4px] light-img"
+                    class="w-[24.4px] light-img unhovered"
                   />
                   <img
                     src="./images/worker/heart-icon-dark.svg"
                     alt="dark-icon"
-                    class="w-[24.4px] dark-img hidden"
+                    class="w-[24.4px] dark-img hidden hovered"
                   />
                 </div>
-                <p class="max-h-[66px] overflow-hidden">
+                <p class="max-h-[66px] overflow-hidden duration-200">
                   All of our employees wear masks
                 </p>
               </div>
               <div
-                class="w-[200px] bg-[#F5F5F5] color-gray duration-200 p-4 rounded-xl flex flex-col justify-between"
+                class="card w-full sm:w-[150px] lg:w-[200px] bg-[#F5F5F5] color-gray duration-200 p-4 rounded-xl flex flex-col justify-between hover:bg-[#299764]"
               >
                 <div class="flex justify-end mb-[29px] pt-2 pr-2">
                   <img
                     src="./images/worker/block-icon.svg"
                     alt="icon"
-                    class="w-[24.7px] light-img"
+                    class="w-[24.7px] light-img unhovered"
                   />
                   <img
                     src="./images/worker/block-icon-dark.svg"
                     alt="dark-icon"
-                    class="w-[24.7px] dark-img hidden"
+                    class="w-[24.7px] dark-img hidden hovered"
                   />
                 </div>
-                <p class="max-h-[66px] overflow-hidden">
+                <p class="max-h-[66px] overflow-hidden duration-200">
                   We stay up to date with all protocol from the CDC
                 </p>
               </div>
             </div>
-          </div>
-          <div class="w-[40%] relative text-center">
             <div
-              class="bg-[#299764] w-[300px] h-[300px] rounded-full mx-auto"
+              class="bg-[#299764] w-[160px] h-[160px] rounded-full absolute top-0 right-0 -z-10 -translate-y-1/2 translate-x-1/2 md:hidden"
+            ></div>
+          </div>
+          <div
+            class="hidden md:block md:w-[35%] lg:w-[40%] relative text-center"
+          >
+            <div
+              class="bg-[#299764] w-[220px] lg:w-[300px] h-[220px] lg:h-[300px] rounded-full mx-auto mt-[35%] lg:mt-0"
             ></div>
             <img
               src="./images/worker/worker.png"
               alt="worker"
-              class="absolute top-7 left-1/2 -translate-x-1/2 max-w-[386px]"
+              class="absolute -bottom-[10%] lg:bottom-auto lg:top-7 left-1/2 -translate-x-1/2 max-w-[284px] lg:max-w-[386px]"
             />
           </div>
         </div>
@@ -1164,25 +1231,40 @@
       class="footer py-10 border-t border-gray-300 border-elm"
     >
       <div class="container main-container">
-        <div class="footer-top flex justify-between items-end">
-          <div class="footer-top__about max-w-[240px] mr-[65px]">
-            <img
-              src="./images/header/logo.png"
-              alt="logo"
-              class="w-[150px] mb-5"
-            />
-            <p class="text-xs text-[#555555] grayText duration-200 font-normal">
-              The safety of our employees and renters is our number one
-              priority. In addition to being confident your vehicle is cleaned
-              and sanitized every time you rent, you can also feel confident
-              that we will take every opportunity to enhance the health and
-              safety measures currently practiced in our operations.
-            </p>
+        <div
+          class="footer-top flex flex-col lg:flex-row lg:justify-between lg:items-end"
+        >
+          <div
+            class="flex justify-between items-center w-full lg:block lg:w-auto"
+          >
+            <div
+              class="footer-top__about max-w-[199px] sm:max-w-[240px] lg:mr-[65px] mb-6 sm:mb-[30px] lg:mb-0"
+            >
+              <img
+                src="./images/header/logo.png"
+                alt="logo"
+                class="w-[100px] sm:w-[150px] mb-4 sm:mb-5"
+              />
+              <p
+                class="text-xs text-[#555555] h-[80px] sm:h-auto overflow-hidden sm:overflow-auto grayText duration-200 font-normal"
+              >
+                The safety of our employees and renters is our number one
+                priority. In addition to being confident your vehicle is cleaned
+                and sanitized every time you rent, you can also feel confident
+                that we will take every opportunity to enhance the health and
+                safety measures currently practiced in our operations.
+              </p>
+            </div>
+            <div class="footer-bottom__about w-[138px] sm:w-[240px] lg:hidden">
+              <p class="text-sm sm:text-base">
+                &copy; 2022 Car rental <br />Terms & Conditions
+              </p>
+            </div>
           </div>
           <div
-            class="footer-top__links flex flex-grow items-start justify-between"
+            class="footer-top__links flex flex-grow flex-wrap sm:flex-nowrap items-start justify-between"
           >
-            <ul>
+            <ul class="w-1/2 sm:w-auto mb-10 sm:mb-0">
               <li class="mb-4"><h4>Main</h4></li>
               <li class="mb-[12px]">
                 <a
@@ -1199,7 +1281,7 @@
                 >
               </li>
             </ul>
-            <ul>
+            <ul class="w-1/2 sm:w-auto mb-10 sm:mb-0">
               <li class="mb-4"><h4>Categories</h4></li>
               <li class="mb-[12px]">
                 <a
@@ -1223,7 +1305,7 @@
                 </a>
               </li>
             </ul>
-            <ul>
+            <ul class="w-1/2 sm:w-auto">
               <li class="mb-4"><h4>Company</h4></li>
               <li class="mb-[12px]">
                 <a
@@ -1254,7 +1336,7 @@
                 </a>
               </li>
             </ul>
-            <ul>
+            <ul class="w-1/2 sm:w-auto">
               <li class="mb-4"><h4>Our Locations</h4></li>
               <li class="mb-[12px]">
                 <a
@@ -1280,13 +1362,19 @@
             </ul>
           </div>
         </div>
-        <div class="footer-bottom flex justify-start items-start pt-10">
-          <div class="footer-bottom__about w-[240px] mr-[65px] pt-10">
+        <div
+          class="footer-bottom flex flex-col lg:flex-row lg:justify-start lg:items-start pt-10"
+        >
+          <div
+            class="footer-bottom__about w-[240px] mr-[65px] pt-10 hidden lg:block"
+          >
             <p>@copy; 2022 Car rental <br />Terms & Conditions</p>
           </div>
           <div class="border-t border-gray-300 border-elm pt-10 flex-grow">
-            <div class="footer-bottom__links flex max-w-[615px]">
-              <ul>
+            <div
+              class="footer-bottom__links flex flex-wrap sm:flex-nowrap max-w-[615px]"
+            >
+              <ul class="w-1/2 mb-10 sm:mb-0 sm:w-auto">
                 <li class="mb-4"><h4>Contact</h4></li>
                 <li class="mb-[12px]">
                   <a
@@ -1303,7 +1391,7 @@
                   >
                 </li>
               </ul>
-              <ul class="mx-auto">
+              <ul class="w-1/2 mb-10 sm:mb-0 sm:w-auto sm:mx-auto">
                 <li class="mb-4"><h4>Hours of operation</h4></li>
                 <li class="mb-[12px]">
                   <a
@@ -1320,9 +1408,9 @@
                   >
                 </li>
               </ul>
-              <ul>
+              <ul class="w-full sm:w-auto">
                 <li class="mb-4"><h4>Social network</h4></li>
-                <li class="flex">
+                <li class="flex w-full">
                   <a
                     href="#"
                     class="flex w-10 h-10 rounded-full bg-[#000] bgDark duration-200 items-center justify-center mr-4 hover:bg-pink-500"
@@ -1341,10 +1429,18 @@
                   </a>
                   <a
                     href="#"
-                    class="flex w-10 h-10 rounded-full bg-[#000] bgDark duration-200 items-center justify-center hover:bg-blue-600"
+                    class="flex w-10 h-10 rounded-full bg-[#000] bgDark duration-200 mr-4 items-center justify-center hover:bg-blue-600"
                   >
                     <i
                       class="bx bxl-facebook text-2xl text-white textWhite duration-200"
+                    ></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="flex w-10 h-10 rounded-full bg-[#000] bgDark duration-200 items-center justify-center hover:bg-green-600"
+                  >
+                    <i
+                      class="bx bxl-whatsapp text-2xl text-white textWhite duration-200"
                     ></i>
                   </a>
                 </li>
