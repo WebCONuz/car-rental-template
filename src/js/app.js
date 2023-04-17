@@ -19,6 +19,20 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // modal
+  const loginBtn = document.querySelector(".loginBtn");
+  const loginModal = document.querySelector(".login-modal");
+  loginBtn.addEventListener("click", function () {
+    loginModal.classList.add("show");
+  });
+  window.addEventListener("click", function (e) {
+    if (
+      e.target.classList.contains("bx-x") ||
+      e.target.classList.contains("login-modal")
+    )
+      loginModal.classList.remove("show");
+  });
+
   // -----------------------------------------------------------
   // Window scroll ---------------------------------------------
   // -----------------------------------------------------------
